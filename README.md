@@ -1,2 +1,3 @@
 # soratobu_kabuyu
-Script to analyze 空飛ぶ株優.com
+
+Scripts to analyze [空飛ぶ株優.com](http://soratobu-kabuyu.com/index.html)
