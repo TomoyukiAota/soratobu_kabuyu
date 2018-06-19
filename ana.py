@@ -1,12 +1,12 @@
 """
-This scripts fetches ANA-specific information from 空飛ぶ株優.com
+This script fetches ANA-specific information from 空飛ぶ株優.com
 http://soratobu-kabuyu.com/ana/index.html
 """
 
 
 import ast
-import requests
 import bs4
+import requests
 
 
 def print_average_price(soup):
@@ -39,12 +39,12 @@ def print_price_table(soup):
         .split(')')[0]
     original_price_table = ast.literal_eval(price_table_text)
 
-    def extractValue(item):
+    def extract_value(item):
         """Extract values from original item in original_price_table"""
         average_price = (item[1] + item[4]) / 2.0     # Take average of the row price and the high price
         return [item[0], average_price]
 
-    price_table = list(map(extractValue, original_price_table[1:]))
+    price_table = list(map(extract_value, original_price_table[1:]))
     print(price_table)
 
 
