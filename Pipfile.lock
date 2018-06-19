@@ -1,0 +1,44 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "91a57ff1bfeacb31c275ba36ec08cc75201af0934f8c6613c5ff4b2200eaa27b"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "beautifulsoup4": {
+            "hashes": [
+                "sha256:11a9a27b7d3bddc6d86f59fb76afb70e921a25ac2d6cc55b40d072bd68435a76",
+                "sha256:7015e76bf32f1f574636c4288399a6de66ce08fb7b2457f628a8d70c0fbabb11",
+                "sha256:808b6ac932dccb0a4126558f7dfdcf41710dd44a4ef497a0bb59a77f9f078e89"
+            ],
+            "version": "==4.6.0"
+        },
+        "requests": {
+            "hashes": [
+                "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
+                "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
+            ],
+            "version": "==2.19.1"
+        }
+    },
+    "develop": {
+        "pylint": {
+            "hashes": [
+                "sha256:a48070545c12430cfc4e865bf62f5ad367784765681b3db442d8230f0960aa3c",
+                "sha256:fff220bcb996b4f7e2b0f6812fd81507b72ca4d8c4d05daf2655c333800cb9b3"
+            ],
+            "version": "==1.9.2"
+        }
+    }
+}
