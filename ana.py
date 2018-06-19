@@ -9,6 +9,13 @@ import bs4
 import requests
 
 
+def create_BeautifulSoup():
+    response = requests.get('http://soratobu-kabuyu.com/ana/index.html')
+    response.raise_for_status()
+    soup = bs4.BeautifulSoup(response.content, "html.parser")
+    return soup
+
+
 def print_average_price(soup):
     """
     ANA株主優待券（新券）の平均買取価格を表示
@@ -48,15 +55,8 @@ def print_price_table(soup):
     print(price_table)
 
 
-def get_BeautifulSoup():
-    response = requests.get('http://soratobu-kabuyu.com/ana/index.html')
-    response.raise_for_status()
-    soup = bs4.BeautifulSoup(response.content, "html.parser")
-    return soup
-
-
 def main():
-    soup = get_BeautifulSoup()
+    soup = create_BeautifulSoup()
     print_average_price(soup)
     print_price_table(soup)
 
