@@ -19,5 +19,5 @@ pipenv install
 
 Issue the following command:
 ```
-pipenv run ana.py
+pipenv run python ana.py
 ```
